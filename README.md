@@ -15,3 +15,6 @@ npm run-script generatedirective to generate a directive
 Also built out the interface per instructions in the lab, exported and imported to ContentList class.
 2024-01-27
 14:30PM EST
+
+coded all this stuff but it only displays the title and not the actual list; attempting to resolve now. think i need to import something else.
+14:48PM EST

@@ -1,6 +1,6 @@
 import { Content } from './content-interface';
 
-class ContentList {
+export class ContentList {
     private contents: Content[] = [];
 
     constructor() {
