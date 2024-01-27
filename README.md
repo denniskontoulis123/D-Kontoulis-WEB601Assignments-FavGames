@@ -16,5 +16,10 @@ Also built out the interface per instructions in the lab, exported and imported 
 2024-01-27
 14:30PM EST
 
-coded all this stuff but it only displays the title and not the actual list; attempting to resolve now. think i need to import something else.
+coded all this stuff out but it only displays the title and not the actual list; attempting to resolve now. think i need to import something else.
+14:48PM EST
+
+i was right; just had to import CommonModule 
+new line of code was; import { CommonModule } from '@angular/common';
+everything works now!
 14:48PM EST
