@@ -65,3 +65,7 @@ but upon adjusting app.component.html the project would start and then produced 
 decided to roll back the change and tackle the initial error message
 2024-02-03
 09:41AM EST
+
+ok im just going to start over because i am hopelessly in the weeds. back in a few
+2024-02-03
+09:53AM EST

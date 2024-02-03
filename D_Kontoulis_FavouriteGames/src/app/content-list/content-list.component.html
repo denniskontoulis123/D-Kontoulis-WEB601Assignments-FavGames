@@ -1,3 +1,14 @@
-<div *ngFor="let contentItem of contents; let i = index" [class.first-content]="i === 0">
-    <app-content-card [content]="contentItem"></app-content-card>
-</div>
+<div class="content-card">
+    <h2>{{ content.title }}</h2>
+    <img *ngIf="content.imgURL" src="{{ content.imgURL }}" alt="Image for {{ content.title }}" (click)="onImageClick()" style="cursor: pointer;">
+    <p>{{ content.description }}</p>
+    <p>Creator: {{ content.creator }}</p>
+    <p *ngIf="content.type">Type: {{ content.type }}</p>
+    <div *ngIf="content.tags && content.tags.length > 0">
+      <p>Tags:</p>
+      <ul>
+        <li *ngFor="let tag of content.tags">{{ tag }}</li>
+      </ul>
+    </div>
+  </div>
+  
