@@ -71,5 +71,3 @@ export class ContentListComponent {
   ngOnInit(): void {
   }
 }
-
-}

@@ -38,3 +38,30 @@ put together an array per instructions; this time more of a focus on adventure/o
 paths for imports and such haha.
 2024-02-03
 09:23AM EST
+
+used some Ifs and Fors to iterate thru information more seamlessly as far as the content-card display goes. see content-card.component.html for the code.
+2024-02-03
+09:28AM EST
+
+having a hard time getting this to work now; getting a bunch of errors when i try to run. initially ti was just;
+X [ERROR] NG8001: 'app-content-list' is not a known element:
+1. If 'app-content-list' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-content-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+but upon adjusting app.component.html the project would start and then produced a long list of type errors. furhter work required.
+2024-02-03
+09:40AM EST
+
+decided to roll back the change and tackle the initial error message
+2024-02-03
+09:41AM EST
