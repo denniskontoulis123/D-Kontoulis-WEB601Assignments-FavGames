@@ -29,3 +29,12 @@ everything works now!
 Starting work on assignment 2; commenting out the ContentList implementation and then subsequently deleting the content-list.ts per instructions.
 2024-02-03
 09:05AM EST
+
+ran ng generate component ContentList again per instructions
+2024-02-03
+09:13AM EST
+
+put together an array per instructions; this time more of a focus on adventure/open world/action games. so far so good other than forgetting how to determine
+paths for imports and such haha.
+2024-02-03
+09:23AM EST
