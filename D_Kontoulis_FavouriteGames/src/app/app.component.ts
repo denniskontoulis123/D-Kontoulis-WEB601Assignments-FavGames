@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { ContentCardComponent } from '../app/content-card/content-card.component'
+import { RouterOutlet } from '@angular/router';
+import { ContentCardComponent } from './content-card/content-card.component';
+import { ContentListComponent } from './content-list/content-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ContentCardComponent],
+  imports: [ContentCardComponent, ContentListComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

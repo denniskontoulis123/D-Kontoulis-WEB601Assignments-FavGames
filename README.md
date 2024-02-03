@@ -69,3 +69,12 @@ decided to roll back the change and tackle the initial error message
 ok im just going to start over because i am hopelessly in the weeds. back in a few
 2024-02-03
 09:53AM EST
+
+rolled back at least 3 times, hoping its ok now
+2024-02-03
+10:08AM EST
+
+im an idiot that spent 40 minutes trying to fix something that was only a simple change of the content-list html file. whatever its done now. no more errors
+are occuring, going to submit now.
+2024-02-03
+10:53AM EST
