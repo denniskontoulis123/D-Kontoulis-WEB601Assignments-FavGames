@@ -109,3 +109,13 @@ been wrestling with this to get it to work. got odwn to just one error message, 
 everythign is showing up now but it isn't splitting the lists nor are the borders being correctly generated. attempting a fix now.
 2024-02-09
 13:13EST
+
+ok i managed to get all my colours to show, but i'm realizing the list iterated one too many times. going to adjust my ngFor logic so that this doesnt happen
+2024-02-09
+13:37 EST
+
+played with the content-list.component.html for a bit and turns out that it was literally one line in <h2>{{ type }}</h2> creating issues. i got rid of it
+and everything is displaying correctly now. items without a type don't get a special background; they're separated and those that do have a type get a diff colour
+based on that type.
+2024-02-09
+13:42 EST

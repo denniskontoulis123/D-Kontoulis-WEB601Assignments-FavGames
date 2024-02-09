@@ -109,19 +109,21 @@ export class ContentListComponent implements OnInit {
     }
   }
 
-  getCardStyle(contentType: string): any {
-    // switch statement to dynamically generate borders for diff types
+  getCardStyle(contentType: string | undefined): string {
+    if (!contentType) {
+      return 'default-style'; 
+    }
     switch (contentType) {
       case 'Action-Adventure':
-        return { 'border-left': '5px solid blue' };
+        return 'action-adventure-style';
       case 'Action RPG':
-        return { 'border-left': '5px solid green' };
+        return 'action-rpg-style';
       case 'First-Person Shooter':
-        return { 'border-left': '5px solid red' };
+        return 'fps-style';
       case 'RPG':
-        return { 'border-left': '5px solid purple' };
+        return 'rpg-style';
       default:
-        return { 'border-left': '5px solid grey' }; // default
+        return 'default-style'; 
     }
-  }
+  }  
 }

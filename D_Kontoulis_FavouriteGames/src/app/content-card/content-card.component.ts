@@ -12,6 +12,7 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class ContentCardComponent implements OnInit {
   @Input() content: Content | any;
+  @Input() cardClass: string = '';
 
   constructor() {}
 
