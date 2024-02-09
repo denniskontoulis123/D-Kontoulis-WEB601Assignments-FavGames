@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
-import { NgFor, NgStyle } from '@angular/common';
 import { ContentCardComponent } from '../content-card/content-card.component';
+
 @Component({
   selector: 'app-content-list',
-  standalone: true,
-  imports: [NgFor, NgStyle, ContentCardComponent],
   templateUrl: './content-list.component.html',
-  styleUrl: './content-list.component.scss'
+  styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent implements OnInit {
   contents: Content[] = [
@@ -84,7 +82,25 @@ export class ContentListComponent implements OnInit {
       tags: ["Open World", "Story-rich", "Fantasy"]
     }
   ];
+  types: string[] = []; // array for unique types
+  searchTitle: string = ''; // input field for search
+  searchResultMessage: string = ''; // msg for search
+  searchResultColor: string = ''; // color for search
 
   ngOnInit(): void {
+    // extract unique types
+    this.types = Array.from(new Set(this.contents.map(content => content.type || '')));
+  }
+
+  // search for item via title
+  searchByTitle(): void {
+    const foundContent = this.contents.find(content => content.title === this.searchTitle);
+    if (foundContent) {
+      this.searchResultMessage = `Content with title "${this.searchTitle}" found!`;
+      this.searchResultColor = 'green';
+    } else {
+      this.searchResultMessage = `Content with title "${this.searchTitle}" not found!`;
+      this.searchResultColor = 'red';
+    }
   }
 }

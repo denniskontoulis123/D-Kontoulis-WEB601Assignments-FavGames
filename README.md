@@ -78,3 +78,26 @@ im an idiot that spent 40 minutes trying to fix something that was only a simple
 are occuring, going to submit now.
 2024-02-03
 10:53AM EST
+
+began work on assignment 3 a day early as my saturday is very packed. adjusting array per instructions.
+2024-02-09
+12:31PM EST
+
+
+after much coding (albeit not hard as for the pipe i simply used angular's generative command), initial problem arose in the form of;
+[{
+	"resource": "/c:/Users/Dennis/Desktop/D_Kontoulis_WEB601Assignments_FavGames/D-Kontoulis-WEB601Assignments-FavGames/D_Kontoulis_FavouriteGames/src/app/content-list/content-list.component.ts",
+	"owner": "typescript",
+	"code": "2322",
+	"severity": 8,
+	"message": "Type '(string | undefined)[]' is not assignable to type 'string[]'.\n  Type 'string | undefined' is not assignable to type 'string'.\n    Type 'undefined' is not assignable to type 'string'.",
+	"source": "ts",
+	"startLineNumber": 94,
+	"startColumn": 5,
+	"endLineNumber": 94,
+	"endColumn": 15
+}]
+
+adjusted the types array to help TypeScript infer the type correctly. as such, i degined it specifically as an arary of strings.
+2024-02-09
+12:43PM EST

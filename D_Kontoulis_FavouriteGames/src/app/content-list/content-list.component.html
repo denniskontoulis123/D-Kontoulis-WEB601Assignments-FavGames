@@ -1,4 +1,13 @@
-<div class="card-wrapper" *ngFor="let item of contents; let isFirst = first" [ngStyle]="{'border': isFirst ? '2px solid black' : '1px solid blue'}">
-    <app-content-card [content]="item"></app-content-card>
+<div>
+  <h1>Content List</h1>
+  <input type="text" [(ngModel)]="searchTitle" placeholder="Enter title to search">
+  <button (click)="searchByTitle()">Search</button>
+  <p [style.color]="searchResultColor">{{ searchResultMessage }}</p>
+
+  <div *ngFor="let type of types">
+    <h2>{{ type || 'No Type' }} Content</h2>
+    <div *ngFor="let content of contents | contentFilter: type">
+      <app-content-card [content]="content" [ngStyle]="getCardStyle(content.type)"></app-content-card>
+    </div>
   </div>
-  
+</div>
