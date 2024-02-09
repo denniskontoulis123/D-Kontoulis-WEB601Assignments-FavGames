@@ -1,13 +1,16 @@
-<div>
-  <h1>Content List</h1>
-  <input type="text" [(ngModel)]="searchTitle" placeholder="Enter title to search">
-  <button (click)="searchByTitle()">Search</button>
-  <p [style.color]="searchResultColor">{{ searchResultMessage }}</p>
+<input type="text" [(ngModel)]="searchTitle" placeholder="Enter title to search">
+<button (click)="searchByTitle()">Search</button>
+<p [style.color]="searchResultColor">{{ searchResultMessage }}</p>
 
-  <div *ngFor="let type of types">
-    <h2>{{ type || 'No Type' }} Content</h2>
-    <div *ngFor="let content of contents | contentFilter: type">
-      <app-content-card [content]="content" [ngStyle]="getCardStyle(content.type)"></app-content-card>
-    </div>
-  </div>
-</div>
+<!-- content items with no type -->
+<ng-container *ngFor="let content of contents">
+  <app-content-card [content]="content" *ngIf="!content.type"></app-content-card>
+</ng-container>
+
+<!-- content items by type -->
+<ng-container *ngFor="let type of types">
+  <h2>{{ type }}</h2>
+  <ng-container *ngFor="let content of contents">
+    <app-content-card [content]="content" *ngIf="content.type === type" [ngStyle]="getCardStyle(content.type)"></app-content-card>
+  </ng-container>
+</ng-container>

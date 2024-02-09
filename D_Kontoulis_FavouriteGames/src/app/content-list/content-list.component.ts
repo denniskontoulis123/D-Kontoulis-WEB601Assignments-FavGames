@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Content } from '../helper-files/content-interface';
+import { ContentFilterPipe } from '../content-filter/content-filter.pipe';
+import { FormsModule } from '@angular/forms';
 import { ContentCardComponent } from '../content-card/content-card.component';
 
 @Component({
   selector: 'app-content-list',
+  standalone: true,
+  imports: [CommonModule, FormsModule, ContentCardComponent, ContentFilterPipe],
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.scss']
 })
@@ -101,6 +106,22 @@ export class ContentListComponent implements OnInit {
     } else {
       this.searchResultMessage = `Content with title "${this.searchTitle}" not found!`;
       this.searchResultColor = 'red';
+    }
+  }
+
+  getCardStyle(contentType: string): any {
+    // switch statement to dynamically generate borders for diff types
+    switch (contentType) {
+      case 'Action-Adventure':
+        return { 'border-left': '5px solid blue' };
+      case 'Action RPG':
+        return { 'border-left': '5px solid green' };
+      case 'First-Person Shooter':
+        return { 'border-left': '5px solid red' };
+      case 'RPG':
+        return { 'border-left': '5px solid purple' };
+      default:
+        return { 'border-left': '5px solid grey' }; // default
     }
   }
 }

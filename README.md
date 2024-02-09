@@ -101,3 +101,11 @@ after much coding (albeit not hard as for the pipe i simply used angular's gener
 adjusted the types array to help TypeScript infer the type correctly. as such, i degined it specifically as an arary of strings.
 2024-02-09
 12:43PM EST
+
+been wrestling with this to get it to work. got odwn to just one error message, need to build out some logic for getting card styles and what not.
+2024-02-09
+13:08 EST
+
+everythign is showing up now but it isn't splitting the lists nor are the borders being correctly generated. attempting a fix now.
+2024-02-09
+13:13EST

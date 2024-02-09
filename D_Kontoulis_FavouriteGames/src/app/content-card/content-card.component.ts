@@ -8,7 +8,7 @@ import { NgFor, NgIf } from '@angular/common';
   standalone: true,
   imports: [CommonModule, NgFor, NgIf],
   templateUrl: './content-card.component.html',
-  styleUrl: './content-card.component.scss'
+  styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent implements OnInit {
   @Input() content: Content | any;
