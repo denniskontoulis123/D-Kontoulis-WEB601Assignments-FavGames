@@ -64,6 +64,24 @@ export class ContentListComponent implements OnInit {
       imgURL: "https://upload.wikimedia.org/wikipedia/en/5/5a/FF_XV_cover_art.jpg", 
       type: "JRPG",
       tags: ["Fantasy", "Open World", "Adventure"]
+    },
+    {
+      id: 7,
+      title: "Super Mario Odyssey",
+      description: "Join Mario on a massive, globe-trotting 3D adventure!",
+      creator: "Nintendo",
+      imgURL: "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg", 
+      // no type set per inst
+      tags: ["3D", "Adventure", "Platformer"]
+    },
+    {
+      id: 8,
+      title: "The Witcher 3: Wild Hunt",
+      description: "An open world action role-playing game developed by CD Projekt.",
+      creator: "CD Projekt",
+      imgURL: "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg", 
+      // no type set per inst
+      tags: ["Open World", "Story-rich", "Fantasy"]
     }
   ];
 
