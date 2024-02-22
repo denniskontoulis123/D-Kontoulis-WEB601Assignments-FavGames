@@ -125,7 +125,17 @@ getting started on assignment 4 a couple days early; out of town from tomorrow m
 09:16AM
 
 bathroom break and then some code.  adjusted content-card-component.html to show a default img if imgURL isn't set. next is integrating a directive named hover-affect
+2024-02-22
 09:39 AM
 
 generated hover affect directive via ng generate directive HoverAffect
+2024-02-22
 09:41 AM
+
+put togethr hover affect directive; pretty simple to put together. need to adjust HTML next to actually make it function
+2024-02-22
+09:52 AM
+
+ok for some reason the hover isnt working. going to try and debug now
+2024-02-22
+09:56 AM

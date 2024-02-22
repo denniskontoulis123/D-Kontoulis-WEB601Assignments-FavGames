@@ -7,9 +7,8 @@
   </div>
   <ng-template #defaultImage>
     <strong>Image:</strong>
-    <img src="path/to/default/image.jpg" width="200" height="200" alt="Default Image" />
+    <img src="blob:null/69fa158b-b5fa-4e42-9df8-9534aa6540e9" width="200" height="200" alt="Default Image" />
   </ng-template>
-  
 
 
   <div>
@@ -24,16 +23,15 @@
 
   <div *ngIf="content.type">
     <strong>Type:</strong>
-    {{content?.type}}
+    <span appHoverAffect="underline">{{content.type}}</span>
   </div>
 
   <div *ngIf="content.tags">
     <strong>Tags:</strong>
-
     <div>
-      <span *ngFor="let tagItem of content.tags;" class="badge">
+      <span *ngFor="let tagItem of content.tags" class="badge" appHoverAffect="bold">
         {{tagItem}}
       </span>
     </div>
-  </div>
+  </div>  
 </div>
