@@ -2,11 +2,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Content } from '../helper-files/content-interface';
 import { NgFor, NgIf } from '@angular/common';
+import { HoverAffectDirective } from '../hover-affect.directive';
 
 @Component({
   selector: 'app-content-card',
   standalone: true,
-  imports: [CommonModule, NgFor, NgIf],
+  imports: [CommonModule, NgFor, NgIf, HoverAffectDirective],
   templateUrl: './content-card.component.html',
   styleUrls: ['./content-card.component.scss']
 })

@@ -139,3 +139,7 @@ put togethr hover affect directive; pretty simple to put together. need to adjus
 ok for some reason the hover isnt working. going to try and debug now
 2024-02-22
 09:56 AM
+
+lol forgot to import stuff into the typescript file. we're good now. this was a shockingly simple assignment!
+2024-02-22
+10:03 AM
