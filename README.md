@@ -119,3 +119,7 @@ and everything is displaying correctly now. items without a type don't get a spe
 based on that type.
 2024-02-09
 13:42 EST
+
+getting started on assignment 4 a couple days early; out of town from tomorrow morning until Sunday night and thus will not have access to my desktop and github  by extension.
+2024-02-22
+09:16AM
