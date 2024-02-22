@@ -1,10 +1,15 @@
 <div class="card" [ngClass]="cardClass">
   <h1>{{content.title}}</h1>
 
-  <div *ngIf="content.imgURL">
+  <div *ngIf="content.imgURL; else defaultImage">
     <strong>Image:</strong>
     <img src="{{content.imgURL}}" width="200" height="200" (click)="handleClick(content)" alt="{{content.title}}" />
   </div>
+  <ng-template #defaultImage>
+    <strong>Image:</strong>
+    <img src="path/to/default/image.jpg" width="200" height="200" alt="Default Image" />
+  </ng-template>
+  
 
 
   <div>

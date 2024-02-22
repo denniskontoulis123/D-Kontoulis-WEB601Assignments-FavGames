@@ -123,3 +123,5 @@ based on that type.
 getting started on assignment 4 a couple days early; out of town from tomorrow morning until Sunday night and thus will not have access to my desktop and github  by extension.
 2024-02-22
 09:16AM
+
+bathroom break and then some code.  adjusted content-card-component.html to show a default img if imgURL isn't set. next is integrating a directive named hover-affect
