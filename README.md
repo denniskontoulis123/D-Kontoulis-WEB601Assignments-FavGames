@@ -159,3 +159,8 @@ ok, rolled things back. attempting the assignment again. trying a diff approach.
 managed to get things rolling again, but for whatever reason the content wont display. going to attempt to fix.
 2024-03-02
 10:34AM
+
+genuinely cant understand why it wont display the added stuff, or why it wont add it at all, thought i did it right but did not. unfortunately
+out of time for the day and have to submit :(
+2024-03-02
+11:00AM
