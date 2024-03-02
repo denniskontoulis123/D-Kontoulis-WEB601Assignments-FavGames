@@ -147,3 +147,7 @@ lol forgot to import stuff into the typescript file. we're good now. this was a 
 up bright and early and starting work again.  ran the commmand to create the create-content component.
 2024-03-02
 09:41AM
+
+broke something. have to roll back. idk what the problem is.
+2024-03-02
+10:03AM
