@@ -4,11 +4,12 @@ import { Content } from '../helper-files/content-interface';
 import { ContentFilterPipe } from '../content-filter/content-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { ContentCardComponent } from '../content-card/content-card.component';
+import { CreateContentComponent } from '../create-content/create-content.component'; 
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule, FormsModule, ContentCardComponent, ContentFilterPipe],
+  imports: [CommonModule, FormsModule, ContentCardComponent, ContentFilterPipe, CreateContentComponent],
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.scss']
 })
@@ -126,4 +127,9 @@ export class ContentListComponent implements OnInit {
         return 'default-style'; 
     }
   }  
+
+  addNewContent(newContent: Content): void {
+    this.contents.push(newContent);
+    this.types = Array.from(new Set(this.contents.map(content => content.type || '')));
+  }
 }

@@ -155,3 +155,7 @@ broke something. have to roll back. idk what the problem is.
 ok, rolled things back. attempting the assignment again. trying a diff approach.
 2024-03-02
 10:07AM
+
+managed to get things rolling again, but for whatever reason the content wont display. going to attempt to fix.
+2024-03-02
+10:34AM
