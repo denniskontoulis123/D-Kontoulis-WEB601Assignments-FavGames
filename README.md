@@ -151,3 +151,7 @@ up bright and early and starting work again.  ran the commmand to create the cre
 broke something. have to roll back. idk what the problem is.
 2024-03-02
 10:03AM
+
+ok, rolled things back. attempting the assignment again. trying a diff approach.
+2024-03-02
+10:07AM
