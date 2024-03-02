@@ -143,3 +143,7 @@ ok for some reason the hover isnt working. going to try and debug now
 lol forgot to import stuff into the typescript file. we're good now. this was a shockingly simple assignment!
 2024-02-22
 10:03 AM
+
+up bright and early and starting work again.  ran the commmand to create the create-content component.
+2024-03-02
+09:41AM
