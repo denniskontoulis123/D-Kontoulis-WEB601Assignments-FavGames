@@ -4,6 +4,7 @@ import { Content } from '../helper-files/content-interface';
 import { ContentFilterPipe } from '../content-filter/content-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { ContentCardComponent } from '../content-card/content-card.component';
+import { FavGamesService } from '../fav-games.service'; 
 
 @Component({
   selector: 'app-content-list',
@@ -13,15 +14,20 @@ import { ContentCardComponent } from '../content-card/content-card.component';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent implements OnInit {
-  
-  types: string[] = []; // array for unique types
-  searchTitle: string = ''; // input field for search
-  searchResultMessage: string = ''; // msg for search
-  searchResultColor: string = ''; // color for search
+  contentArray: Content[] = [];
+  types: string[] = [];
+  searchTitle: string = '';
+  searchResultMessage: string = '';
+  searchResultColor: string = '';
+
+  constructor(private favGamesService: FavGamesService) {}
 
   ngOnInit(): void {
-    // extract unique types
-    this.types = Array.from(new Set(this.contents.map(content => content.type || '')));
+    this.favGamesService.getContentArray().subscribe(data => {
+      this.contentArray = data;
+      // extract unique types
+      this.types = Array.from(new Set(this.contentArray.map(content => content.type || '')));
+    });
   }
 
   // search for item via title
