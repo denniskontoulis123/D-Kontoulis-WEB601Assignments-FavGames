@@ -9,4 +9,13 @@ import { contentArray } from './helper-files/contentDb';
 export class FavGamesService {
 
   constructor() { }
+
+  getContentArray(): Observable<Content[]> {
+    return of(contentArray);
+  }
+
+  getContentById(id: number): Observable<Content | undefined> {
+    const content = contentArray.find(c => c.id === id);
+    return of(content);
+  }
 }

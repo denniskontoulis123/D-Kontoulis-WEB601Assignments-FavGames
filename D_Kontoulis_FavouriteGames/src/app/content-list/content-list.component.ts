@@ -32,7 +32,7 @@ export class ContentListComponent implements OnInit {
 
   // search for item via title
   searchByTitle(): void {
-    const foundContent = this.contents.find(content => content.title === this.searchTitle);
+    const foundContent = this.contentArray.find(content => content.title === this.searchTitle);
     if (foundContent) {
       this.searchResultMessage = `Content with title "${this.searchTitle}" found!`;
       this.searchResultColor = 'green';
