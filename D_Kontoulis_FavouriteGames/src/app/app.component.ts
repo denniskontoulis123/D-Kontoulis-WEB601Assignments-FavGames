@@ -4,12 +4,13 @@ import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { MessagesComponent } from './services/messages/messages.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ContentCardComponent, ContentListComponent, RouterOutlet, FormsModule, CommonModule],
+  imports: [ContentCardComponent, ContentListComponent, RouterOutlet, FormsModule, CommonModule, MessagesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

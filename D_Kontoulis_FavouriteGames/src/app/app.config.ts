@@ -10,11 +10,15 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration(), provideHttpClient(),  
-  importProvidersFrom([
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false,
-      delay: 1000,
+  providers: [
+    // Removed provideRouter since routes are not defined
+    provideClientHydration(),
+    provideHttpClient(),
+    importProvidersFrom([
+      HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+        dataEncapsulation: false,
+        delay: 1000,
       })
-  ])]
-}; 
+    ])
+  ]
+};
