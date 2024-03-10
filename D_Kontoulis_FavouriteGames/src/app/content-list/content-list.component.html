@@ -3,11 +3,11 @@
 <p [style.color]="searchResultColor">{{ searchResultMessage }}</p>
 
 <!-- content items with no type -->
-<ng-container *ngFor="let content of contents | contentFilter: ''">
+<ng-container *ngFor="let content of contentArray | contentFilter: ''">
   <app-content-card [content]="content"></app-content-card>
 </ng-container>
 
 <!-- content items by type -->
-<ng-container *ngFor="let content of contents">
+<ng-container *ngFor="let content of contentArray">
   <app-content-card *ngIf="content.type" [content]="content" [cardClass]="getCardStyle(content.type)"></app-content-card>
 </ng-container>
