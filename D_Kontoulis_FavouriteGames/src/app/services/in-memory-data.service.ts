@@ -8,12 +8,14 @@ import { contentArray } from '../helper-files/contentDb';
 })
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
-    const content : Content[] = contentArray;
-    return {content};
+    const content = contentArray;
+    return { content };
   }
 
-  genId(content: Content[]): number {
-    return content.length > 0 ?
-    Math.max(...content.map(c => c.id)) + 1 : 2000;
+  genId(contents: Content[]): number {
+    const ids = contents
+      .map(c => c.id as number) // Coerce id to number, implicitly excluding nulls
+      .filter(id => id != null); 
+    return ids.length > 0 ? Math.max(...ids) + 1 : 2000;
   }
 }
