@@ -148,3 +148,7 @@ lol forgot to import stuff into the typescript file. we're good now. this was a 
 uploaded to git and all but will likely have to consult with Kuantan about it cuz nothing is working and my file structure is a mess
 2024-03-24
 11:05 AM
+
+NEVERMIND GOT IT TO WORK
+2024-03-24
+11:34 AM

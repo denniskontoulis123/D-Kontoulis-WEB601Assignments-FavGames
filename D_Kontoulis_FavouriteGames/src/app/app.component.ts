@@ -11,7 +11,7 @@ import { ModifyContentComponent } from './modify-content-component/modify-conten
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ContentCardComponent, ContentListComponent, RouterOutlet, /* FormsModule, CommonModule,*/ MessagesComponent, ModifyContentComponent],
+  imports: [ContentCardComponent, ContentListComponent, RouterOutlet, FormsModule, CommonModule, MessagesComponent, ModifyContentComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
