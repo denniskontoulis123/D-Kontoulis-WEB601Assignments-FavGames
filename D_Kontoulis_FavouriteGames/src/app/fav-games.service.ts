@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { Content } from './helper-files/content-interface';
 import { tap } from 'rxjs/operators';
 import { contentArray } from './helper-files/contentDb';
-import { MessageService } from './services/messages/messages.service';
+import { MessageService } from './services/messages.service';
 
 @Injectable({
   providedIn: 'root'

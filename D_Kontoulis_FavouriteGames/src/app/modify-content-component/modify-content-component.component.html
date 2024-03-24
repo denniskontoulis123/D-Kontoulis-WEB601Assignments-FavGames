@@ -1,1 +1,9 @@
-<p>modify-content-component works!</p>
+<form (submit)="addContent()">
+    <input type="text" [(ngModel)]="newContent.title" placeholder="Title" name="title">
+    <input type="text" [(ngModel)]="newContent.description" placeholder="Description" name="description">
+    <input type="text" [(ngModel)]="newContent.creator" placeholder="Creator" name="creator">
+    <input type="text" [(ngModel)]="newContent.imgURL" placeholder="Image URL" name="imgURL">
+    <input type="text" [(ngModel)]="newContent.type" placeholder="Type" name="type">
+    <input type="text" [(ngModel)]="newContent.tags" placeholder="Tags (comma-separated)" name="tags">
+    <button type="submit">Add Content</button>
+  </form>
