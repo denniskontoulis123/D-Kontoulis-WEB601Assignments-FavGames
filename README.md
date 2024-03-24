@@ -143,3 +143,8 @@ ok for some reason the hover isnt working. going to try and debug now
 lol forgot to import stuff into the typescript file. we're good now. this was a shockingly simple assignment!
 2024-02-22
 10:03 AM
+
+
+uploaded to git and all but will likely have to consult with Kuantan about it cuz nothing is working and my file structure is a mess
+2024-03-24
+11:05 AM
