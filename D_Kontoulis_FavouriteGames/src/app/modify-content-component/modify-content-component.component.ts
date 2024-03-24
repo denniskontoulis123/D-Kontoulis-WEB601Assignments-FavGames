@@ -5,8 +5,8 @@ import { Content } from '../helper-files/content-interface';
 
 @Component({
   selector: 'app-modify-content',
-  templateUrl: './modify-content.component.html',
-  styleUrls: ['./modify-content.component.scss'],
+  templateUrl: './modify-content-component.component.html',
+  styleUrls: ['./modify-content-component.component.scss'],
   standalone: true,
   imports: []
 })

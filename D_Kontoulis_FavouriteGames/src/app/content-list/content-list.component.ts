@@ -22,6 +22,11 @@ export class ContentListComponent implements OnInit {
 
   constructor(private favGamesService: FavGamesService) {}
 
+  onContentAdded(newContent: Content): void {
+    // push content
+    this.contentArray.push(newContent);
+  }
+
   ngOnInit(): void {
     this.favGamesService.getContentArray().subscribe(data => {
       this.contentArray = data;
